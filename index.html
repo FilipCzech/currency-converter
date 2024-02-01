@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-converter 2.0</title>
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="script/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator waluty</legend>
+            <p>
+                <strong>Pole wymagane oznaczone są "*"</strong>
+            </p>
+
+            <label>
+                <span class="form__labelText">
+                    Waluta:
+                </span>
+                <select class="form__field js-currency">
+                    <option>EUR</option>
+                    <option>USD</option>
+                </select>
+            </label>
+            <p>
+                <label>
+                    <span class="form__labelText">Kwota*: </span>
+                    <input class="form__field form js-amount" type="number" step="0.01" placeholder="Pdaj kwotę"
+                        min="0.01" required>
+                </label>
+            </p>
+
+            <p>
+                <button class="form__button">Policz</button>
+            </p>
+            <p>
+                Wynik w PLN <strong class="form js-sum">N/A</strong>
+            </p>
+        </fieldset>
+    </form>
+    <footer class="form__footer">
+        <span>Copyright &copy; Filip Czech</span>
+    </footer>
+</body>
+
+</html>
